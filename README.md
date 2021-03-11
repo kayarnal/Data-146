@@ -9,3 +9,4 @@
 
 - [Project 2](https://kayarnal.github.io/Data-146/Project2/Project2.html)
 
+- [Project 3](https://kayarnal.github.io/Data-146/Project3/Project3.html)
