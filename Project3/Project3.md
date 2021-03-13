@@ -2,25 +2,27 @@
 
 ## 1
 
-Download the dataset charleston_ask.csv and import it into your PyCharm project workspace. Specify and train a model the designates the asking price as your target variable and beds, baths and area (in square feet) as your features. Train and test your target and features using a linear regression model. Describe how your model performed. What were the training and testing scores you produced? How many folds did you assign when partitioning your training and testing data? Interpret and assess your output.
+With originally 10 folds in the model, the training and testing scores produced R-Squared values of .019 and -.003, respectively. With 30 folds, the testing score decreases to -.186, and to -.581 with 50 folds. Such a low R-Squared value suggests the current linear regression model is a poor fit for the data, showing little to no correlation between the feature and target values. Increasing the number of folds in the model proves the over-fitness of the model, this the external validity continually getting much smaller in comparison to the internal validity. The model poorly predicts both the data it was trained on, and the data it wasn't trained on. 
 
 ## 2
 
-Now standardize your features (again beds, baths and area) prior to training and testing with a linear regression model (also again with asking price as your target). Now how did your model perform? What were the training and testing scores you produced? How many folds did you assign when partitioning your training and testing data? Interpret and assess your output.
+With 10 folds in the model, the training and testing scores produced respective values of .019 and -.014. With 30 folds, the testing score decreases to -.088, and then to -.512 with 50 folds. The standardized features perform nearly exactly the same as with the original regression model. The model still performs poorly and suggests the it is over-fit with the given data. 
 
 ## 3
 
-Then train your dataset with the asking price as your target using a ridge regression model. Now how did your model perform? What were the training and testing scores you produced? Did you standardize the data? Interpret and assess your output.
+Using standardized data in a ridge regression model with 10 folds, a training score of .019 is produced, along with a testing score of -.034. 30 folds provides respective training and testing scores of .019 and -.209, while 50 folds produce values of .019 and -.446. While the model still performs poorly, with an increase in to 50 folds, this model does perform better than the previous two models, as it is less over-fit. 
 
 ## 4
 
-Next, go back, train and test each of the three previous model types/specifications, but this time use the dataset charleston_act.csv (actual sale prices). How did each of these three models perform after using the dataset that replaced asking price with the actual sale price? What were the training and testing scores you produced? Interpret and assess your output.
+Sticking with 50 folds, the dataset charleston_act.csv provides training and testing scores of .004 and -.151 in the original linear regression model. Upon standardizing the data, the scores change to .004 and -.13, while the standardized ridge regression reveals training and testing scores of .004 and -.155. In comparison to the dataset of asking prices, actual prices produce a model with much closer internal and external validity; however, the values are even lower than that of the original data - suggesting each model is very under-fit. With R-squared values of .004, less than 1% of the trained data is explained by the model. 
 
 ## 5
 
-Go back and also add the variables that indicate the zip code where each individual home is located within Charleston County, South Carolina. Train and test each of the three previous model types/specifications. What was the predictive power of each model? Interpret and assess your output.
+Including the zip code dummy variables in the model of actual prices increases the training and testing scores across all three models. In OLS linear regression using 50 folds, there was a training score of .337 and a testing score of .127. Upon standardizing, the testing score decreased to a massive negative number, suggesting the original, unstandardized model is a better fit for the full data set of actual home prices. In the final, ridge regression model, the testing score produced a value of .065. Each model claims and 33% of the trained data is explained by the model, while the predictive power of the un-trained, new data changes dramatically, shifting from 12% and 6% to an extremely negative correlation. The inclusion of the dummy variables likely threw off the results of the standardized data by including so many 0 values. Including the zip code data improves the unstandardized model, suggesting the location of the homes has a greater impact on prices than the size of the homes. 
 
 ## 6
 
-Finally, consider the model that produced the best results. Would you estimate this model as being overfit or underfit? If you were working for Zillow as their chief data scientist, what action would you recommend in order to improve the predictive power of the model that produced your best results from the approximately 700 observations (716 asking / 660 actual)?
+Of the models ran, the results were produced using basic OLS linear regression including the zip code dummy variables. With a closer connection between the external and internal validity of this model, and the low values of both validities, this model is estimated to be underfit, however it is a much better fit than that of the datasets excluding the zip code variables. There was likely an issue of omitted variables in those model, as the three included features had such a low impact on the model. Including zip code boosted the predictive power of the model, and likely, the inclusion of other possible independent variables would further improve the model's predictive power. If I was working at Zillow, in the linear regression model of the final data set, I would include additional variables that could influence home prices, such as when the home was built and other aspects of location, such as proximity to cities or schools. 
 
+
+[Project 3 Code](Project3.py) 
