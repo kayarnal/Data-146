@@ -23,6 +23,3 @@ Including the zip code dummy variables in the model of actual prices increases t
 ## 6
 
 Of the models ran, the results were produced using basic OLS linear regression including the zip code dummy variables. With a closer connection between the external and internal validity of this model, and the low values of both validities, this model is estimated to be underfit, however it is a much better fit than that of the datasets excluding the zip code variables. There was likely an issue of omitted variables in those model, as the three included features had such a low impact on the model. Including zip code boosted the predictive power of the model, and likely, the inclusion of other possible independent variables would further improve the model's predictive power. If I was working at Zillow, in the linear regression model of the final data set, I would include additional variables that could influence home prices, such as when the home was built and other aspects of location, such as proximity to cities or schools. 
-
-
-[Project 3 Code](Project3.py) 
