@@ -30,15 +30,15 @@ The score of the linear regression model run on the target and MedInc in .47.
 
 ## 18
 
-Running a linear regression on the standardized data with 20 folds returns a $R^2$ value of .60198.
+Running a linear regression on the standardized data with 20 folds returns a R<sup>2</sup> value of .60198.
 
 ## 19
 
-Running a ridge regression on the standardized data with 20 folds returns a $R^2$ value of .60201.
+Running a ridge regression on the standardized data with 20 folds returns a R<sup>2</sup> value of .60201.
 
 ## 20
 
-Running a linear regression on the standardized data with 20 folds returns a $R^2$ value of .60213.
+Running a linear regression on the standardized data with 20 folds returns a R<sup>2</sup> value of .60213.
 
 ## 21
 
@@ -50,11 +50,11 @@ Of all of the feature values, the most corrleated is MedInc. After running the t
 
 ## 23
 
-If looking at the MSE instead of $R^2$ in a Ridge Regression, the optimal alpha value will change from 25.8 to 26.1.
+If looking at the MSE instead of R<sup>2</sup> in a Ridge Regression, the optimal alpha value will change from 25.8 to 26.1.
 
 ## 24
 
-If looking at the MSE instead of $R^2$ in a Lasso Regression, the optimal alpha value will remain the same at .00186.
+If looking at the MSE instead of R<sup>2</sup> in a Lasso Regression, the optimal alpha value will remain the same at .00186.
 
 
 [Midterm Code](MidtermAnswers.py)
