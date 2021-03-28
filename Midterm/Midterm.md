@@ -1,6 +1,9 @@
 # Midterm Questions 15-24
 
+First, I imported all required libraries and the California Housing Data. I then set up my features as X and my targets as y. From there, I built my K-fold function to be used throughout the following questions.
+
 ## 15
+
 
 `Xy = X_df.copy()`
 
@@ -26,7 +29,7 @@ Upon standardizing the dataset, the correlation coefficients of the given featur
 
 ## 17
 
-The score of the linear regression model run on the target and MedInc in .47. 
+The score of the linear regression model run on the target and MedInc is .47. 
 
 ## 18
 
@@ -54,7 +57,7 @@ If looking at the MSE instead of R<sup>2</sup> in a Ridge Regression, the optima
 
 ## 24
 
-If looking at the MSE instead of R<sup>2</sup> in a Lasso Regression, the optimal alpha value will remain the same at .00186.
+If looking at the MSE instead of R<sup>2</sup> in a Lasso Regression, the optimal alpha value will remain the same at .00186. Originally, I miscalculated MSE in my DoKFold function and used the np.argmax() command instead of np.argmin() as MSE should be minimized rather than maximized. Upon implemented my corrections, I found the optimal alpha value to be the same in both instances of the Lasso regression.
 
 
 [Midterm Code](MidtermAnswers.py)
