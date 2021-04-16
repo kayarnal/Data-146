@@ -27,9 +27,9 @@ Using a range of 0.00024 to 0.00029, I ran a Lasso regression, which after a few
 I then ran the same previous three tests with the target set to 'wealthI' instead of 'wealthC'. 
 For the Linear Regression model, the test produced unstandardized R<sup>2</sup> test and train values of 0.825836 and 0.8250949, respectively, larger than the Linear Regression R<sup>2</sup> values with the 'wealthC' target. 'wealthI' Linear Regression also produced larger MSE values. I'm not sure what is happening with the MSE in this situation, as both the train and test MSE give values in the billions - 1750174405.288178 and 1754301835.1771877. Upon standardizing, the R<sup>2</sup> values changed to 0.825803 and 0.825101, larger than the unstandardized test value, and smaller for the train score, while both are larger than what was given using 'wealthC'. The standardized linear coefficients were much larger for the standardized data set producing the first three values of 8.64993728e+03,  5.31704713e+02, and -1.00083919e+03, in comparison to the unstandardized set, which first three values were 2.31986195e+03,  1.08192000e+03, and -5.08892487e+01, suggesting that standardizing the data allows the parameters a larger, positive impact on the target value.
 
-Using a range of 85 to 95, the Ridge Regression using 'wealthI' produced an optimal alpha value of 93.42105 with test and train R<sup>2</sup> values of 0.825836 and 0.8253538, larger than the output of the Linear Regression for 'wealthI', and all of the outcomes for 'wealthI'
+Using a range of 85 to 95, the Ridge Regression using 'wealthI' produced an optimal alpha value of 93.42105 with test and train R<sup>2</sup> values of 0.825836 and 0.8253538, larger than the output of the Linear Regression for 'wealthI', and all of the outcomes for 'wealthC'
 
-Using a range of 0.8 to 1.2, the Lasso Regression using 'wealthI' produced an optimal alpha value of ____ with test and train R<sup>2</sup> values of ___ and ___, smaller than the output of the Ridge Regression for 'wealthI', and all of the outcomes for 'wealthI'
+Using a range of 0.8 to 1.2, the Lasso Regression using 'wealthI' produced an optimal alpha value of 1.06666 with test and train R<sup>2</sup> values of 0.825835 and 0.825021, smaller than the output of the Ridge Regression for 'wealthI', and larger than all of the outcomes for 'wealthC'
 
 
 ## 6 
