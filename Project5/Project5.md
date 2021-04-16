@@ -40,18 +40,16 @@ While the Ridge regression produced the best output for 'wealthC', all of the re
 
 The following two graphs demonstrate the optimal alpha value on the X-axis and the mean R<sup>2</sup> on the Y-axis for the Ridge Regression of the two models, with 'wealthC' in red, and 'wealthI' in blue, showing the higher R<sup>2</sup> values of 'wealthI' in comparison to 'wealthC'.
 
-    <figure>
+  <figure>
     <img
     src="RidgeWealthC.png"
     alt="Alpha Values for WealthC - Ridge">
-    <figcaption>Alpha Values for WealthC - Ridge</figcaption>
-    </figure>
+   </figure>
 
 <figure>
   <img
   src="RidgeWealthI.png"
   alt="Alpha Values for WealthI - Ridge">
-  <figcaption>Alpha Values for WealthI - Ridge</figcaption>
 </figure>
 
 The following two graphs demonstrate the optimal alpha value for the Lasso Regression of the two models, with 'wealthC' in red, and 'wealthI' in blue, showing the higher R<sup>2</sup> values of 'wealthI' in comparison to 'wealthC'.
@@ -60,12 +58,10 @@ The following two graphs demonstrate the optimal alpha value for the Lasso Regre
   <img
   src="LassoWealthC.png"
   alt="Alpha Values for WealthC - Lasso">
-  <figcaption>Alpha Values for WealthC - Lasso</figcaption>
 </figure>
 
 <figure>
   <img
   src="LassoWealthI.png"
   alt="Alpha Values for WealthI - Lasso">
-  <figcaption>Alpha Values for WealthC - Lasso</figcaption>
 </figure>
