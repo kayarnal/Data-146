@@ -11,4 +11,6 @@
 
 - [Project 3](https://kayarnal.github.io/Data-146/Project3/Project3.html)
 
+- [Project 5](https://kayarnal.github.io/Data-146/Project5/Project5.html)
+
 ## [Midterm](https://kayarnal.github.io/Data-146/Midterm/Midterm.html)
