@@ -58,6 +58,9 @@ The following two graphs demonstrate the optimal alpha value on the X-axis and t
 </figure>
 </div>
 
+<center><img src="RidgeWealthI.png"></center>
+     <center>This is an image</center>
+
 The following two graphs demonstrate the optimal alpha value for the Lasso Regression of the two models, with 'wealthC' in red, and 'wealthI' in blue, showing the higher R<sup>2</sup> values of 'wealthI' in comparison to 'wealthC'.
 
 <div id="container">
