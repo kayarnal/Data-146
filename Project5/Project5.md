@@ -16,7 +16,7 @@ The linear coefficients of the unstandardized and standardized models differ sig
 
 ## 3
 
-Using a range of 60 to 70, I ran a Ridge regression on the data, finding an optimal alpha value at 68.421052, with a testing R<sup>2</sup> score of 0.7358368 and a training R<sup>2</sup> of 0.7351759. The Ridge regression produced a very slightly better model than the Linear regression, but only at the fifth decimal point.
+Using a range of 60 to 70, I ran a Ridge regression on the data, finding an optimal alpha value at 68.421052, with a testing R<sup>2</sup> score of 0.7358368 and a training R<sup>2</sup> of 0.7351759. The Ridge regression produced a slightly better model than the Linear regression, but only at the fifth decimal point.
 
 ## 4
 
