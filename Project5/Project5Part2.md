@@ -3,6 +3,7 @@
 After importing the necessary libraries, functions, and commands, I imported the 'city_persons.csv' data and set the features and target values, with the target equal to the variable 'wealthC'.
 
 `X = df.drop(["wealthC"], axis = 1)`
+
 `y = df.wealthC`
 
 ## 2
@@ -42,8 +43,11 @@ In the logistic regression, the accuracy increases slightly to 0.5496975.
 When running a model of random forests, the standardized, unstandardized accuracy scores of 100, 500, 1000, and 5000 estimators are as follows:
 
 100: 0.50317227, 0.50073206
+
 500: 0.49829184, 0.50219619
+
 1000: 0.50414836, 0.5056124
+
 5000: 0.50366032, 0.5021961
 
 When two values of the dependent variable are recoded into a single variable, the predictive ability of each of the three models decreases by about 0.5, claiming the chosen models accurately predict the result of the model only about 50% of the time. This could be because there is now less variability in the data. Before the collapsing of the two values, wealth class C had a large majority in the feature variable, which increased when wealth class 2 was collapsed into it. As most of the feature data has the same value, the lower variability could explain the worsened predictive quality of the second data set.
