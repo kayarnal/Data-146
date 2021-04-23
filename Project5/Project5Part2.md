@@ -18,19 +18,25 @@ When the logistic regression was run on the data - with max iterations set to 10
 
 With the number of estimators set to 100, 500, 1000, and 5000, the specification most likely to return the best model is that with 500 trees - returning scores on the training and testing values of 0.8274739 and 0.5690580. The training and testing scores for the rest of the estimator models were as follows:
 
-100: 0.827473958, 0.56320156
-500: 0.827473958, 0.56905807
-1000: 0.827473958, 0.56124938
-5000: 0.827473958, 0.56710590
+| Estimators  | Training | Testing |
+| ------------- | ------------- | ---------- |
+| 100  | 0.827473958  | 0.56320156 |
+| 500  | 0.827473958 | 0.56905807 |
+| 1000 | 0.827473958 | 0.56124938 |
+| 5000 | 0.827473958 | 0.56710590 |
 
 After running random forests models on a range of data, it was found that the minimum number of samples required to split an internal node was 25, yielding a training and testing set of 0.7041695 and 0.6090504, better results than both the logistic regression and the K-nearest neighbors model.
 
 The standardized data produced models of greater accuracy with the accuracy results for standardized, unstandardized estimators of 100, 500, 1000, and 5000 listed below:
 
-100: 0.56417764, 0.55880917
-500: 0.56808199, 0.56027330
-1000: 0.57393850, 0.56173743
-5000: 0.56954612, 0.56515373
+
+| Estimators  | Standardized Accuracy | Unstandardized Accuracy |
+| ------------- | ------------- | ------------- |
+| 100  | 0.56417764  |  0.55880917 |
+| 500  | 0.56808199 | 0.56027330 |
+| 1000 | 0.57393850 | 0.56173743 |
+| 5000 | 0.56954612 | 0.56515373 |
+
 
 ## 5
 
@@ -42,13 +48,12 @@ In the logistic regression, the accuracy increases slightly to 0.5496975.
 
 When running a model of random forests, the standardized, unstandardized accuracy scores of 100, 500, 1000, and 5000 estimators are as follows:
 
-100: 0.50317227, 0.50073206
-
-500: 0.49829184, 0.50219619
-
-1000: 0.50414836, 0.5056124
-
-5000: 0.50366032, 0.5021961
+| Estimators  | Standardized Accuracy | Unstandardized Accuracy |
+| ------------- | ------------- | ------------- |
+| 100  | 0.50317227  |  0.50073206 |
+| 500  | 0.49829184 | 0.50219619 |
+| 1000 | 0.50414836 | 0.5056124 |
+| 5000 | 0.50366032 | 0.5021961 |
 
 When two values of the dependent variable are recoded into a single variable, the predictive ability of each of the three models decreases by about 0.5, claiming the chosen models accurately predict the result of the model only about 50% of the time. This could be because there is now less variability in the data. Before the collapsing of the two values, wealth class C had a large majority in the feature variable, which increased when wealth class 2 was collapsed into it. As most of the feature data has the same value, the lower variability could explain the worsened predictive quality of the second data set.
 
